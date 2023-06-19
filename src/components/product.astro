@@ -1,0 +1,33 @@
+---
+import ContentSection from "./content-section.astro";
+import { Picture } from "@astrojs/image/components";
+import product from "../assets/product1.jpg";
+const widths = [1200];
+---
+
+<ContentSection title="Produkt" id="product">
+  <Fragment slot="picture">
+    <Picture
+
+    src={product}
+    widths={widths}
+    loading="eager"
+    alt="Toxos finest"
+  />
+
+  </Fragment>
+  <Fragment slot="text">
+ <span>   Entdecke unser außergewöhnliches Olivenöl mit einem Säuregehalt von nur 0,32% - ein wahrer Genuss für dich! Unsere Leidenschaft für hochwertige Zutaten und exzellenten Geschmack hat uns dazu inspiriert, ein Olivenöl von höchster Qualität zu kreieren, das selbst deinen anspruchsvollen Gaumen verzaubert.
+
+Unser Olivenöl wird aus den besten handverlesenen Oliven hergestellt und durch ein sorgfältiges Verfahren gewonnen, um sicherzustellen, dass nur das reinste und geschmacksintensivste Öl in jede Flasche gelangt. Mit einem außergewöhnlich niedrigen Säuregehalt von 0,32% bietet unser Olivenöl eine unvergleichliche Qualität, die nur wenige andere erreichen können.
+
+Aber das ist noch nicht alles! Ich bin stolz darauf, dir mitteilen zu können, dass unser Olivenöl von einem renommierten Sternekoch persönlich getestet wurde. Nachdem er unsere exquisite Kreation probiert hatte, war er von dem Geschmack und der Qualität so beeindruckt, dass eine Zusammenarbeit mit uns unvermeidlich wurde. Bald wird dieses erstklassige Olivenöl Teil seiner kreativen Küche sein, um seinen anspruchsvollen Gerichten den letzten Schliff zu verleihen.
+
+Worauf wartest du? Schließe dich den Genießern an und erweitere deinen Gaumen mit unserem außergewöhnlichen Olivenöl. Mit seinem delikaten Aroma, einer perfekten Balance zwischen Frische und Intensität und einem Säuregehalt von nur 0,32% ist dieses Olivenöl ein wahrer Schatz, den du in deiner Küche nicht missen solltest.
+
+Egal, ob du ein erfahrener Koch oder ein begeisterter Hobbykoch bist, unser Olivenöl wird deine kulinarischen Kreationen auf eine neue Ebene heben. Verleihe deinen Salaten, Pasta-Gerichten, gegrilltem Gemüse und vielem mehr einen Hauch von Eleganz und unverwechselbarem Geschmack.
+
+Bestelle noch heute und tauche ein in die Welt des raffinierten Genusses. Mit unserem Olivenöl mit einem Säuregehalt von 0,32% und der bevorstehenden Zusammenarbeit mit einem Sternekoch bieten wir dir ein einzigartiges kulinarisches Erlebnis, das du nicht verpassen solltest. Verwöhne dich selbst und deine Gäste mit der Exzellenz, die dieses außergewöhnliche Olivenöl zu bieten hat!
+  </span>
+  </Fragment>
+</ContentSection>

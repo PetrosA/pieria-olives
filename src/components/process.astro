@@ -1,0 +1,47 @@
+---
+import ContentSection from "./content-section.astro";
+import { Picture } from "@astrojs/image/components";
+import process1 from "../assets/prozess1.jpg";
+import process2 from "../assets/prozess3.jpg";
+import process3 from "../assets/prozess4.jpg";
+
+const widths = [1200];
+---
+
+<ContentSection title="Prozess" id="process">
+  <Fragment slot="picture">
+    <Picture
+
+    src={process1}
+    widths={widths}
+    loading="eager"
+    alt="Toxos finest"
+  />
+  <Picture
+
+  src={process2}
+  widths={widths}
+  loading="eager"
+  alt="Toxos finest"
+/>
+<Picture
+class="drop-shadow-lg"
+
+src={process3}
+widths={widths}
+loading="eager"
+alt="Toxos finest"
+/>
+  </Fragment>
+  <Fragment slot="text">
+<span>
+    Die manuelle Olivenernte ist eine traditionelle Methode zur Ernte von Oliven, die in vielen mediterranen Ländern seit Jahrhunderten praktiziert wird. Diese Methode erfordert handwerkliches Geschick, Geduld und eine gewisse körperliche Ausdauer.
+    Bei der manuellen Olivenernte werden die Oliven von den Bäumen per Hand gepflückt. Dies geschieht in der Regel während der Reifezeit der Früchte, wenn sie ihre optimale Größe, Farbe und Ölgehalt erreicht haben. Die Ernte findet oft zwischen Herbst und Winter statt.
+    Die Erntearbeiter klettern auf die Bäume oder verwenden Leitern, um Zugang zu den Oliven zu bekommen. Sie verwenden spezielle Handwerkzeuge wie Kämme oder Rüttelstangen, um die Zweige vorsichtig zu schütteln oder die Oliven einzusammeln. Manchmal werden auch Netze unter den Bäumen ausgebreitet, um herunterfallende Oliven aufzufangen und zu sammeln.
+    Die manuelle Ernte hat mehrere Vorteile. Zum einen ermöglicht sie eine selektive Ernte, bei der nur die reifen Oliven geerntet werden, während unreife oder beschädigte Früchte zurückgelassen werden. Dadurch wird die Qualität des Endprodukts verbessert. Darüber hinaus minimiert die manuelle Ernte das Risiko von Beschädigungen an den Bäumen und begrenzt den Verlust von Oliven.
+    Obwohl die manuelle Olivenernte eine traditionelle Methode ist, wird sie immer noch von vielen Olivenbauern bevorzugt. Sie schätzen die sorgfältige Handhabung der Früchte und die Kontrolle über den Ernteprozess. Die manuelle Ernte wird auch oft mit der Herstellung von hochwertigem Olivenöl in Verbindung gebracht, da sie es ermöglicht, die Oliven in ihrem optimalen Zustand zu ernten und schnell zur Verarbeitung zu bringen.
+    Allerdings ist die manuelle Olivenernte auch zeitaufwändig und arbeitsintensiv. Aufgrund der steigenden Nachfrage nach Olivenöl werden heute jedoch häufiger maschinelle Erntemethoden wie die Verwendung von Rüttelmaschinen eingesetzt, um den Prozess zu beschleunigen.
+    Dennoch bleibt die manuelle Olivenernte ein wichtiger Bestandteil der mediterranen Kultur und eine Kunstform, die Generationen von Olivenbauern überliefert wurde. Sie symbolisiert die Verbundenheit mit der Natur und das Streben nach qualitativ hochwertigen Erzeugnissen
+  </span>
+</Fragment>
+</ContentSection>

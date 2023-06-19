@@ -1,0 +1,55 @@
+---
+import "@fontsource/inter/variable.css";
+import Header from "../components/header.astro";
+import Product from "../components/product.astro";
+import Team from "../components/team.astro";
+import Region from "../components/region.astro";
+import Footer from "../components/footer.astro";
+import Splash from "../components/splash.astro";
+import Process from "../components/process.astro";
+
+const { generator } = Astro;
+const description =
+  "Pierias finest premium olive oil";
+---
+
+<!DOCTYPE html>
+<html lang="de" class="h-full motion-safe:scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="generator" content={generator} />
+
+    <title>Pieria finest premium olive oil</title>
+    <meta name="description" content={description} />
+  </head>
+  <body
+    class="h-full overflow-x-hidden background-page text-default text-base selection:bg-secondary selection:text-white"
+  >
+    <Header />
+    <Splash />
+    <div class="space-y-24 px-8 py-32">
+      <Product />
+      <Team />
+      <Process />
+      <Region />
+      
+    </div>
+    <Footer />
+  </body>
+</html>
+<style is:global>
+  .background-page {
+    background-color: #abb46b;
+
+  }
+ --color-primary: theme("colors.pink.400");
+  --color-secondary: theme("colors.indigo.400");
+  --color-text: theme("colors.gray.50");
+  --color-text-offset: theme("colors.gray.400");
+  --color-background: theme("colors.gray.900");
+  --color-background-offset: theme("colors.gray.800");
+  --color-border: theme("colors.gray.50" / 10%);
+
+</style>

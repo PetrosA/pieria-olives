@@ -1,0 +1,38 @@
+---
+import ContentSection from "./content-section.astro";
+import { Picture } from "@astrojs/image/components";
+import splash from "../assets/splash.jpg";
+import region from "../assets/region_olymp.jpg";
+const widths = [1200];
+---
+
+<ContentSection title="Region" id="region">
+  <Fragment slot="picture">
+    <Picture
+
+    src={splash}
+    widths={widths}
+    loading="eager"
+    alt="Toxos finest"
+  />
+  <Picture
+
+  src={region}
+  widths={widths}
+  loading="eager"
+  alt="Toxos finest"
+/>
+  </Fragement>
+  <Fragment slot="text">
+    <span>
+    Pieria ist eine Region in Griechenland, die sich im nördlichen Teil des Landes befindet. Hier sind einige Informationen über die Region Pieria:
+    Geografie: Pieria liegt am Fuße des Olymp-Gebirges und erstreckt sich entlang der Küste der Ägäis. Die Region zeichnet sich durch ihre vielfältige Landschaft aus, die von hohen Bergen bis hin zu malerischen Küstenstreifen reicht. Der Berg Olympus, der höchste Gipfel Griechenlands, liegt zum Teil in Pieria.
+    Städte und Dörfer: Die Hauptstadt von Pieria ist Katerini, eine lebhafte Stadt mit einer reichen Geschichte und einem pulsierenden Stadtzentrum. Weitere bedeutende Städte und Dörfer in der Region sind Litochoro, Paralia, Leptokarya und Platamonas.
+    Olympische Riviera: Die Küstenregion von Pieria wird oft als die Olympische Riviera bezeichnet und ist für ihre schönen Strände bekannt. Orte wie Paralia und Leptokarya sind beliebte Reiseziele für Touristen, die das kristallklare Wasser der Ägäis genießen möchten.
+    Kulturerbe: Pieria hat eine reiche kulturelle Geschichte, die bis in die antike Zeit zurückreicht. Die Region war ein wichtiger Teil des antiken Makedoniens und war auch mit dem Mythos des Olymps und den zwölf olympischen Göttern verbunden. In der Nähe von Pieria befinden sich archäologische Stätten wie Dion, eine antike Stadt, die dem Gott Zeus gewidmet war.
+    Outdoor-Aktivitäten: Aufgrund ihrer Lage am Fuße des Olymps bietet die Region Pieria zahlreiche Möglichkeiten für Outdoor-Aktivitäten. Besucher können Wanderungen und Trekkingtouren in den Bergen unternehmen, die atemberaubende Landschaften und spektakuläre Ausblicke bieten. Im Winter ist die Region auch für Skifahrer attraktiv, da es Skigebiete wie Elatochori gibt.
+    Gastronomie: Die regionale Küche von Pieria ist geprägt von frischen lokalen Produkten und mediterranen Aromen. Beliebte Gerichte sind unter anderem Meeresfrüchte, Olivenöl, Käse, Fleischgerichte und Süßspeisen wie Baklava. Es lohnt sich, die lokalen Tavernen zu besuchen und die traditionelle Küche zu probieren.
+    Pieria ist eine Region in Griechenland, die sowohl natürliche Schönheit als auch kulturelles Erbe bietet. Ob Sie die Berge erkunden, an den Stränden entspannen oder die antiken Stätten besichtigen möchten, Pieria hat für Reisende viel zu bieten.
+</span>
+  </Fragment>
+</ContentSection>

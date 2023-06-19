@@ -1,0 +1,40 @@
+---
+import { Image } from "@astrojs/image/components";
+import splashScreen from "../assets/splash.jpg";
+import pieriaLogo from "../assets/pieria_logo_einzeln.png"
+
+const widths = [600];
+const heights = 100;
+---
+
+<section class="relative h-full bg-black">
+  <div class="relative grid h-full place-items-center px-12">
+    <Image
+
+        src={pieriaLogo}
+        
+        format={'png'}
+        loading="eager"
+        height={800}
+        width={800}
+        fit={'contain'}
+        alt="Toxos finest"
+      />
+  
+  </div>
+</section>
+
+<style>
+  @keyframes float {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 30px, 0);
+    }
+  }
+
+  </style>
+
+

@@ -1,0 +1,38 @@
+---
+import type { FooterLink } from "../types";
+import { Picture } from "@astrojs/image/components";
+import pieriaLogo from '../assets/pieria_logo.jpeg'
+const widths = [1200];
+
+const links: Array<FooterLink> = [
+  {
+    url: "https://astro.build/",
+    description: "Astro's official website",
+    icon: "mdi:home",
+  },
+  {
+    url: "https://github.com/mhyfritz/astro-landing-page",
+    description: "View source on GitHub",
+    icon: "fa-brands:github-alt",
+  },
+  {
+    url: "https://astro.build/chat",
+    description: "Astro on Discord",
+    icon: "fa-brands:discord",
+  },
+  {
+    url: "https://twitter.com/astrodotbuild",
+    description: "Astro on Twitter",
+    icon: "fa-brands:twitter",
+  },
+];
+---
+
+<footer class="my-32 relative flex h-64 items-center justify-center">
+
+  <Picture src={pieriaLogo}
+  widths={widths}
+  loading="eager"
+  alt="Toxos finest"
+/>
+</footer>

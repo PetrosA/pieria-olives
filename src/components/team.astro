@@ -1,0 +1,23 @@
+---
+import ContentSection from "./content-section.astro";
+import { Picture } from "@astrojs/image/components";
+import georg from "../assets/georg1.jpg";
+const widths = [1200];
+---
+
+<ContentSection title="Team" id="team">
+  <Fragment slot="picture">
+    <Picture
+    src={georg}
+    widths={widths}
+    loading="eager"
+    alt="Toxos finest"
+  />
+  </Fragment>
+  <Fragment slot="text">
+    <span>Wir, die Marke Pieria, sind stolz darauf, Ihnen unser hochwertiges Olivenöl anbieten zu können. Es ist ein "Griechisches Natives Olivenöl Extra" der Premium-Qualität und wird direkt am Fuße des Olymps in der Region Pieria aus eigener Herstellung produziert. Verpackt in 1-Liter-Flaschen, ist es die perfekte Wahl für Familien und alle, die gerne vorrätig haben.
+      Dank des besonders niedrigen Säuregehalts von nur 0,32%, ist es reich an ungesättigten Fettsäuren und Vitamin E, was es perfekt für die tägliche Ernährung macht. Egal ob zum Kochen, Braten oder als Salatdressing, unser Olivenöl ist ein wahrer Allrounder in der Küche.
+      Probieren Sie jetzt unser exklusives Olivenöl aus eigener Herstellung direkt am Fuße des Olymps und genießen Sie den unvergleichlichen Geschmack und die hochwertige Qualität, die nur durch die Herstellung direkt vor Ort erreicht werden kann
+    </span>  
+  </Fragment>
+</ContentSection>
