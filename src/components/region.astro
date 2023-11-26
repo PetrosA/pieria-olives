@@ -3,10 +3,10 @@ import ContentSection from "./content-section.astro";
 import { Picture } from "@astrojs/image/components";
 import splash from "../assets/splash.jpg";
 import region from "../assets/region_olymp.jpg";
-const widths = [1200];
+const widths = [200];
 ---
 
-<ContentSection title="Region" id="region">
+<ContentSection contentMode="PicsInARow" title="Region" id="region">
   <Fragment slot="picture">
     <Picture
 

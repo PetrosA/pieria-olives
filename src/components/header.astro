@@ -1,7 +1,6 @@
 ---
 import type { NavItem } from "../types";
 import { Image } from "@astrojs/image/components";
-import { Icon } from "astro-icon";
 import pieriaLogoSmall from '../assets/pieria_logo_einzeln_klein.jpeg';
 
 const navItems: Array<NavItem> = [
@@ -87,7 +86,6 @@ const navItems: Array<NavItem> = [
 
   document.addEventListener("scroll", () => {
     const d = page.clientHeight - page.scrollTop - header.offsetHeight;
-    console.log(d);
     header.classList.toggle("fixed-header", d < 0);
   });
 
